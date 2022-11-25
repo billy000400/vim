@@ -5,7 +5,21 @@ Plug 'preservim/nerdtree'		" side bar file tree
 Plug 'itchyny/lightline.vim'		" minimal status bar
 Plug 'tpope/vim-fugitive'		" Allows git commands in vim session
 Plug 'airblade/vim-gitgutter'		" Shows git changes in gutter
+Plug 'easymotion/vim-easymotion'	" go to any word quickly '\\w', '\\e', '\\b'
+Plug 'KKPMW/vim-sendtowindow'		" send commands to REPL
 call plug#end()
+
+" lightline
+let g:lightline = {
+        \ 'colorscheme': 'wombat',
+	\ 'active': {
+	\	'left': [ [ 'mode', 'paste'],
+	\		  [ 'gitbranch', 'readonly', 'filename', 'modified'] ]
+	\ },
+	\ 'component_function': {
+	\	'gitbranch': 'FugitiveHead'
+	\ },
+	\ }
 
 " git gutter
 let g:gitgutter_async=0
