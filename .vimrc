@@ -60,7 +60,9 @@ let g:startify_lists = [
       \ ]
 
 " Theme settings
-set termguicolors
+if $TERM_PROGRAM != "Apple_Terminal"
+	set termguicolors
+endif
 colorscheme nord
 
 " General Settings
