@@ -9,7 +9,7 @@ Plug 'easymotion/vim-easymotion'	" go to any word quickly '\\w', '\\e', '\\b'
 Plug 'KKPMW/vim-sendtowindow'		" send commands to REPL
 Plug 'yuttie/comfortable-motion.vim'    " scrolling 'C-d' or 'C-u'
 Plug 'dense-analysis/ale'               " linting [dep]: pip3 install flake8, install.packages('lintr')
-" Plug 'fisadev/vim-isort'                " Python sort imports [dep]: pip3 install isort
+Plug 'fisadev/vim-isort'                " Python sort imports [dep]: pip3 install isort
 Plug 'mhinz/vim-startify'               " A start menu for vim
 Plug 'tmhedberg/SimpylFold'             " Code folding (zo: open, zc: close)
 call plug#end()
@@ -60,9 +60,6 @@ let g:startify_lists = [
       \ ]
 
 " Theme settings
-if (has("termguicolors"))
-  set termguicolors
-endif
 colorscheme nord
 
 " General Settings
