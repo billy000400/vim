@@ -28,7 +28,7 @@ let g:lightline = {
 
 " git gutter
 let g:gitgutter_async=0
-set updatetime=1000			" ms
+set updatetime=100			" ms
 
 " nerdtree settings
 map <C-n> :NERDTreeToggle<CR>
@@ -51,6 +51,7 @@ let g:ale_echo_msg_warning_str='W'
 let g:ale_echo_msg_format='[%linter%] %s [%severity%]: [%...code...%]'
 let g:ale_linters={'python': ['flake8'], 'r': ['lintr']}
 let g:ale_fixers={'python': ['black']}
+let g:ale_python_flake8_options = '--max-line-length=88'
 
 " startify
 let g:startify_lists = [
