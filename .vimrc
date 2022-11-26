@@ -60,6 +60,7 @@ let g:startify_lists = [
       \ ]
 
 " Theme settings
+set termguicolors
 colorscheme nord
 
 " General Settings
