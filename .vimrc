@@ -71,3 +71,4 @@ syntax enable
 set nocompatible
 set number " set line numbers
 set laststatus=2 " Show status bar (lightline)
+set backspace=indent,eol,start
