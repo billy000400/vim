@@ -5,7 +5,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -30,6 +30,9 @@ Plug 'fisadev/vim-isort'                " Python sort imports [dep]: pip3 instal
 Plug 'mhinz/vim-startify'               " A start menu for vim
 Plug 'tmhedberg/SimpylFold'             " Code folding (zo: open, zc: close)
 call plug#end()
+
+" jedi-vim
+let g:jedi#popup_on_dot = 0
 
 " lightline
 let g:lightline = {
