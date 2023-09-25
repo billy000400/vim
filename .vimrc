@@ -84,7 +84,7 @@ let g:startify_lists = [
 if $TERM_PROGRAM != "Apple_Terminal"
 	set termguicolors
 endif
-colorscheme nord
+" colorscheme nord
 
 " General Settings
 syntax enable
